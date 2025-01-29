@@ -29,7 +29,7 @@ void loop()
   if(pirVal==HIGH)
   {
     porte.write(130);
-    //attendre(1300);
+    attendre(1000);
   }
   else
   {
@@ -41,12 +41,9 @@ void loop()
   if(value < 525)
   {
     digitalWrite(9,LOW);
-    //porte.write(120);
   }
   else
   {
-    //porte.write(0);
     digitalWrite(9,HIGH);
   }
-  //analogWrite(9,value);
 }
